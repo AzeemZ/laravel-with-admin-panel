@@ -1,38 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39e99b61-c185-40de-ab4d-79860ab96ca5" name="Default Changelist" comment="all assets">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/buttons.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/calendar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/charts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/chat.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/error-403.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/error-404.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/error-405.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/error-500.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/form-basic.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/form-wizard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/gallery.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/grid.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/icon-fontawesome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/icon-material.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/index2.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/invoice.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/authentication.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/error-pages.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/left-sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layouts/partials/preloader.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/tables.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/widgets.blade.php" afterDir="false" />
+    <list default="true" id="39e99b61-c185-40de-ab4d-79860ab96ca5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="297">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -193,7 +163,7 @@
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -291,7 +261,7 @@
       <workItem from="1558201245236" duration="4685000" />
       <workItem from="1558257377656" duration="1401000" />
       <workItem from="1558259033201" duration="7618000" />
-      <workItem from="1558347677793" duration="13991000" />
+      <workItem from="1558347677793" duration="14095000" />
     </task>
     <task id="LOCAL-00001" summary="all assets">
       <created>1558259216380</created>
@@ -300,20 +270,28 @@
       <option name="project" value="LOCAL" />
       <updated>1558259216380</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="all pages added">
+      <created>1558375673636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558375673636</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27695000" />
+    <option name="totallyTimeSpent" value="27799000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -377,7 +355,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="all assets" />
+    <MESSAGE value="all pages added" />
+    <option name="LAST_COMMIT_MESSAGE" value="all pages added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/partials/footer.blade.php">
@@ -755,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="48" column="26" lean-forward="true" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+        <state relative-caret-position="297">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
