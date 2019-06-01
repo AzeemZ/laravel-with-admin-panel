@@ -1,5 +1,11 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- css libraries -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/jquery-steps/jquery.steps.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/jquery-steps/steps.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Start Page Content -->
@@ -59,4 +65,39 @@
     <!-- ============================================================== -->
     <!-- End Right sidebar -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- This page js -->
+    <script src="{{ url('assets/js-libs/jquery-steps/jquery.steps.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/jquery-validation/jquery.validate.min.js') }}"></script>
+
+    <script>
+        // Basic Example with form
+        var form = $("#example-form");
+        form.validate({
+            errorPlacement: function errorPlacement(error, element) { element.before(error); },
+            rules: {
+                confirm: {
+                    equalTo: "#password"
+                }
+            }
+        });
+        form.children("div").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            onStepChanging: function(event, currentIndex, newIndex) {
+                form.validate().settings.ignore = ":disabled,:hidden";
+                return form.valid();
+            },
+            onFinishing: function(event, currentIndex) {
+                form.validate().settings.ignore = ":disabled";
+                return form.valid();
+            },
+            onFinished: function(event, currentIndex) {
+                alert("Submitted!");
+            }
+        });
+    </script>
 @endsection

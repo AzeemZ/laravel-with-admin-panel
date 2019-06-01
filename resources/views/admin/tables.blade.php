@@ -1,5 +1,11 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- css libraries -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/multicheck/multicheck.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/datatables/dataTables.bootstrap4.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Start Page Content -->
@@ -672,4 +678,18 @@
     <!-- ============================================================== -->
     <!-- End Right sidebar -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- This page js -->
+    <script src="{{ url('assets/js-libs/multicheck/datatable-checkbox-init.js') }}"></script>
+    <script src="{{ url('assets/js-libs/multicheck/jquery.multicheck.js') }}"></script>
+    <script src="{{ url('assets/js-libs/datatables/datatables.min.js') }}"></script>
+
+    <script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+        $('#zero_config').DataTable();
+    </script>
 @endsection

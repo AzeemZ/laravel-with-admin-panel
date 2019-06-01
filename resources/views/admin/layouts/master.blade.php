@@ -17,20 +17,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url('assets/custom/css/style.min.css') }}">
 
-    <!-- CSS Libraries -->
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/flot/float-chart.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/calendar/fullcalendar.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/calendar/calendar.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/calendar/calendar.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/jquery-minicolors/jquery.minicolors.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/bootstrap-datepicker/bootstrap-datepicker.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/quill/quill.snow.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/jquery-steps/jquery.steps.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/jquery-steps/steps.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/toastr/toastr.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/multicheck/multicheck.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/datatables/dataTables.bootstrap4.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/magnific-popup/magnific-popup.css') }}">
+    @yield('css')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -82,8 +69,6 @@
 
 <!-- jQuery -->
 <script src="{{ url('assets/js-libs/jquery/jquery.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-ui/jquery.ui.touch-punch-improved.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-ui/jquery-ui.min.js') }}"></script>
 
 <!-- Bootstrap tether Core JavaScript -->
 <script src="{{ url('assets/js-libs/popper/popper.min.js') }}"></script>
@@ -99,54 +84,10 @@
 <!--Menu sidebar -->
 <script src="{{ url('assets/js-libs/sidebar/sidebarmenu.js') }}"></script>
 
-<!-- index2 page js -->
-<script src="{{ url('assets/js-libs/moment/moment.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/calendar/fullcalendar.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/calendar/cal-init.js') }}"></script>
-
-<!-- forms page js -->
-<script src="{{ url('assets/js-libs/inputmask/jquery.inputmask.bundle.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/inputmask/mask.init.js') }}"></script>
-<script src="{{ url('assets/js-libs/select2/select2.full.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/select2/select2.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-asColor/jquery-asColor.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-asGradient/jquery-asGradient.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-asColorPicker/jquery-asColorPicker.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-minicolors/jquery.minicolors.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/datepicker/bootstrap-datepicker.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/quill/quill.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-steps/jquery.steps.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/jquery-validation/jquery.validate.min.js') }}"></script>
-
-<!-- pages-gallery page js -->
-<script src="{{ url('assets/js-libs/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/magnific-popup/meg.init.js') }}"></script>
-
-<!-- pages-elements page js -->
-<script src="{{ url('assets/js-libs/toastr/toastr.min.js') }}"></script>
-
-<!-- tables page js -->
-<script src="{{ url('assets/js-libs/multicheck/datatable-checkbox-init.js') }}"></script>
-<script src="{{ url('assets/js-libs/multicheck/jquery.multicheck.js') }}"></script>
-<script src="{{ url('assets/js-libs/datatables/datatables.min.js') }}"></script>
-
 <!--Custom JavaScript -->
 <script src="{{ url('assets/custom/js/custom.min.js') }}"></script>
 
-<!-- Charts js Files -->
-<script src="{{ url('assets/js-libs/flot/excanvas.js') }}"></script>
-<script src="{{ url('assets/js-libs/flot/jquery.flot.js') }}"></script>
-<script src="{{ url('assets/js-libs/flot/jquery.flot.pie.js') }}"></script>
-<script src="{{ url('assets/js-libs/flot/jquery.flot.time.js') }}"></script>
-<script src="{{ url('assets/js-libs/flot/jquery.flot.stack.js') }}"></script>
-<script src="{{ url('assets/js-libs/flot/jquery.flot.crosshair.js') }}"></script>
-<script src="{{ url('assets/js-libs/flot/jquery.flot.tooltip.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/chart-page-init.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/matrix.interface.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/excanvas.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/jquery.peity.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/matrix.charts.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/jquery.flot.pie.min.js') }}"></script>
-<script src="{{ url('assets/js-libs/chart/turning-series.js') }}"></script>
+@yield('javascript')
+
 </body>
 </html>

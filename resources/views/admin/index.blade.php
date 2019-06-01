@@ -1,5 +1,10 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/flot/float-chart.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Sales Cards  -->
@@ -746,4 +751,16 @@
     <!-- ============================================================== -->
     <!-- Recent comment and chats -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- Charts js Files -->
+    <script src="{{ url('assets/js-libs/flot/excanvas.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.pie.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.time.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.stack.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.crosshair.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.tooltip.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/chart-page-init.js') }}"></script>
 @endsection

@@ -1,5 +1,11 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- css libraries -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/calendar/fullcalendar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/calendar/calendar.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Start Page Content -->
@@ -101,4 +107,15 @@
     <!-- ============================================================== -->
     <!-- End PAge Content -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- jQuery UI -->
+    <script src="{{ url('assets/js-libs/jquery-ui/jquery.ui.touch-punch-improved.js') }}"></script>
+    <script src="{{ url('assets/js-libs/jquery-ui/jquery-ui.min.js') }}"></script>
+
+    <!-- This page js -->
+    <script src="{{ url('assets/js-libs/moment/moment.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/calendar/fullcalendar.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/calendar/cal-init.js') }}"></script>
 @endsection

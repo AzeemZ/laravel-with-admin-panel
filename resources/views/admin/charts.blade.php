@@ -1,5 +1,10 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/flot/float-chart.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Start Page Content -->
@@ -145,4 +150,21 @@
     <!-- ============================================================== -->
     <!-- End Right sidebar -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- Charts js Files -->
+    <script src="{{ url('assets/js-libs/chart/matrix.interface.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/excanvas.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.pie.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.time.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.stack.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.crosshair.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/jquery.peity.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/matrix.charts.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/jquery.flot.pie.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/flot/jquery.flot.tooltip.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/turning-series.js') }}"></script>
+    <script src="{{ url('assets/js-libs/chart/chart-page-init.js') }}"></script>
 @endsection

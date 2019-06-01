@@ -1,5 +1,13 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- css libraries -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/select2/select2.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/jquery-minicolors/jquery.minicolors.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/bootstrap-datepicker/bootstrap-datepicker.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/quill/quill.snow.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Start Page Content -->
@@ -497,4 +505,59 @@
     <!-- ============================================================== -->
     <!-- End Right sidebar -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- This page js -->
+    <script src="{{ url('assets/js-libs/inputmask/jquery.inputmask.bundle.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/inputmask/mask.init.js') }}"></script>
+    <script src="{{ url('assets/js-libs/select2/select2.full.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/select2/select2.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/jquery-asColor/jquery-asColor.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/jquery-asGradient/jquery-asGradient.js') }}"></script>
+    <script src="{{ url('assets/js-libs/jquery-asColorPicker/jquery-asColorPicker.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/jquery-minicolors/jquery.minicolors.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/datepicker/bootstrap-datepicker.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/quill/quill.min.js') }}"></script>
+
+    <script>
+        // For select 2
+        $(".select2").select2();
+
+        /*colorpicker*/
+        $('.demo').each(function() {
+            //
+            // Dear reader, it's actually very easy to initialize MiniColors. For example:
+            //
+            //  $(selector).minicolors();
+            //
+            // The way I've done it below is just for the demo, so don't get confused
+            // by it. Also, data- attributes aren't supported at this time...they're
+            // only used for this demo.
+            //
+            $(this).minicolors({
+                control: $(this).attr('data-control') || 'hue',
+                position: $(this).attr('data-position') || 'bottom left',
+
+                change: function(value, opacity) {
+                    if (!value) return;
+                    if (opacity) value += ', ' + opacity;
+                    if (typeof console === 'object') {
+                        console.log(value);
+                    }
+                },
+                theme: 'bootstrap'
+            });
+
+        });
+        /*datepicker*/
+        jQuery('.mydatepicker').datepicker();
+        jQuery('#datepicker-autoclose').datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+        var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+    </script>
 @endsection

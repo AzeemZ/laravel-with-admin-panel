@@ -1,5 +1,10 @@
 @extends('admin.layouts.master')
 
+@section('css')
+    <!-- css libraries -->
+    <link rel="stylesheet" type="text/css" href="{{ url('assets/css-libs/magnific-popup/magnific-popup.css') }}">
+@endsection
+
 @section('content')
     <!-- ============================================================== -->
     <!-- Start Page Content -->
@@ -268,4 +273,10 @@
     <!-- ============================================================== -->
     <!-- End Right sidebar -->
     <!-- ============================================================== -->
+@endsection
+
+@section('javascript')
+    <!-- This page js -->
+    <script src="{{ url('assets/js-libs/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url('assets/js-libs/magnific-popup/meg.init.js') }}"></script>
 @endsection
