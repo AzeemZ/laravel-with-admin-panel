@@ -39,3 +39,7 @@ Route::group(['prefix' => 'admin'], function (){
     Route::get('/tables', 'AdminController@tables');
     Route::get('/widgets', 'AdminController@widgets');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
