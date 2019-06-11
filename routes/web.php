@@ -16,10 +16,11 @@ Route::get('/', function () {
 });
 
 Route::group(['prefix' => 'admin'], function (){
+    Route::get('', 'AdminLoginController@showLoginForm')->name('admin-login');
+    Route::post('', 'AdminLoginController@login');
+    Route::post('/logout', 'AdminLoginController@logout')->name('admin-logout');
     Route::get('/dashboard', 'AdminController@index')->name('dashboard');
     Route::get('/dashboard2', 'AdminController@index2');
-    Route::get('/login', 'AdminController@login');
-    Route::get('/register', 'AdminController@register');
     Route::get('/charts', 'AdminController@charts');
     Route::get('/error-403', 'AdminController@error403');
     Route::get('/error-404', 'AdminController@error404');
